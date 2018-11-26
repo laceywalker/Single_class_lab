@@ -20,7 +20,10 @@ def test_team_coach
   assert_equal("Coach", new_team.get_coach)
 end
 
-
+def test_set_coach_name
+  new_team = Team.new("Eyebrows", ['Tom', 'Bob','Sarah'], "Coach")
+  assert_equal("Jeff", new_team.set_coach_name("Jeff"))
+end
 
 
 

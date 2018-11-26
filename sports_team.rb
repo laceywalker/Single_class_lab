@@ -20,6 +20,9 @@ def get_coach
   return @coach
 end
 
+def set_coach_name(coach_name)
+  @coach = coach_name
+end
 
 
 
