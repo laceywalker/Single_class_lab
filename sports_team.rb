@@ -13,6 +13,15 @@ class Team
     @players << player
   end
 
+  def check_player_name(name)
+    for player in @players
+      if player == name
+        return true
+      end
+      return false
+    end
+  end
+
 # def get_name
 #   return @name
 # end
